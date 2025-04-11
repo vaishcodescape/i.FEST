@@ -12,6 +12,7 @@
       from {
         width: 0;
       }
+
       to {
         width: 100%;
       }
@@ -38,10 +39,21 @@
     }
 
     @keyframes dot {
-      0% { content: "."; }
-      33% { content: ".."; }
-      66% { content: "..."; }
-      100% { content: "."; }
+      0% {
+        content: ".";
+      }
+
+      33% {
+        content: "..";
+      }
+
+      66% {
+        content: "...";
+      }
+
+      100% {
+        content: ".";
+      }
     }
 
     .dot-effect::after {
@@ -53,6 +65,7 @@
       from {
         transform: rotate(0deg);
       }
+
       to {
         transform: rotate(360deg);
       }
@@ -63,9 +76,12 @@
     }
 
     @keyframes bounce {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0);
       }
+
       50% {
         transform: translateY(-10px);
       }
@@ -76,27 +92,63 @@
     }
   </style>
 </head>
-<body class ="bg-gradient-to-r from-black via-indigo-900 to-purple-700 flex items-center justify-center min-h-screen">
+
+<body class="bg-gradient-to-r from-black via-indigo-900 to-purple-700 flex items-center justify-center min-h-screen">
   <div class="flex flex-col items-center justify-center h-screen space-y-10">
 
-    
     <img src="src/main_logo.png" alt="i.FEST Logo" class="h-20 w-20 animate-spin-slow" />
 
-    
     <h1 class="text-white text-3xl font-bold">
       Loading i.FEST '25<span class="dot-effect"></span>
     </h1>
 
-    
-    <h2 class="text-white text-2xl animate-bounce">
+    <h2 class="text-white text-2xl animate-bounce text-center">
       Get Ready for DA's Biggest Tech Fest! <br />
       <span class="text-xl">Coming Soon...</span>
     </h2>
-  
-    <div class="ifest-btn"><button class="relative inline-block px-6 py-3 font-semibold text-white rounded-full overflow-hidden group bg-black border border-purple-700 hover:bg-gradient-to-r hover:from-purple-700 hover:to-indigo-900 transition duration-300 ease-in-out">
-      <span class="i.FEST-btn">Enter i.FEST</span>
-    </button>
-  </div>
+
+    <!-- Enter i.FEST Button -->
+    <div>
+      <button
+        class="relative inline-block px-6 py-3 font-semibold text-white rounded-full overflow-hidden group bg-black border border-purple-700 hover:bg-gradient-to-r hover:from-purple-700 hover:to-indigo-900 transition duration-300 ease-in-out">
+        Enter i.FEST'25
+      </button>
+    </div>
+
+    <!-- Previous i.FEST Websites -->
+    <div class="grid grid-cols-1 gap-4">
+      <a href=" " class="text-center" target="_blank">
+        <button
+          class="px-6 py-2 rounded-full bg-purple-700 hover:bg-purple-900 text-white shadow-md transition duration-300">
+          🔗 i.FEST '24 Website
+        </button>
+      </a>
+      <a href=" " class="text-center" target="_blank">
+        <button
+          class="px-6 py-2 rounded-full bg-indigo-600 hover:bg-indigo-800 text-white shadow-md transition duration-300">
+          🔗 i.FEST '23 Website
+        </button>
+      </a>
+      <a href="http://ifest.daiict.ac.in/archive/ifest22/" class="text-center" target="_blank">
+        <button
+          class="px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-800 text-white shadow-md transition duration-300">
+          🔗 i.FEST '22 Website
+        </button>
+      </a>
+      <a href="http://ieee.daiict.ac.in/ifest21/" class="text-center" target="_blank">
+        <button
+          class="px-6 py-2 rounded-full bg-blue-600 hover:bg-blue-800 text-white shadow-md transition duration-300">
+          🔗 i.FEST '21 Website
+        </button>
+      </a>
+      <a href="http://ifest.daiict.ac.in/archive/ifest20/index.html#home" class="text-center" target="_blank">
+        <button
+          class="px-6 py-2 rounded-full bg-gray-800 hover:bg-gray-900 text-white shadow-md transition duration-300">
+          🔗 i.FEST '20 Website
+        </button>
+      </a>
+    </div>
+
   </div>
 </body>
 
